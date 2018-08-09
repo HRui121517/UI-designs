@@ -1,0 +1,15 @@
+{
+  "name": "sass-portfolio",
+  "version": "1.0.0",
+  "description": "Just playing with Sass",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Rui Huang",
+  "license": "MIT",
+  "dependencies": {
+    "i": "^0.3.6",
+    "node-sass": "^4.9.2"
+  }
+}
