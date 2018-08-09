@@ -1,7 +1,9 @@
-Series of front-end UI pages. Mostly just short projects I work on for fun.
+**Just front end stuff I play with**
 
-Materialize: A travel agency page mock up using Materialize
+materialize: materialize css page mock up
 
-About Me: A parallex webpage originally developed for LC101
+AboutMe: A parallex webpage originally developed for LC101
 
+gatsby: React static page generator
 
+sass-portfolio: Trying to learn Sass using node-sass
