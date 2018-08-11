@@ -1,4 +1,94 @@
-$primary-color: #333333;
+$primary-color: #9e9e9e;
+$secondary-color: #ffeb3b;
+$show-home-image: true;
+$home-image: url('../img/background.jpg');
+$background-opacity: 0.8;
+@mixin easeOut {
+  transition: all 1.0s ease-out;
+}
+
+@mixin background {
+  @if $show-home-image {
+    &#bg-img {
+      background: $home-image;
+      background-attachment: fixed;
+      background-size: cover;
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($color: $primary-color, $alpha: $background-opacity);
+        z-index: -1;
+      }
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
+  @include background;
   background-color: $primary-color;
+  color: white;
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+  &.lg-heading {
+    // select the h1 with lg-heading class instead of the nested element in it
+    font-size: 6rem;
+  }
+  &.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($primary-color, $amount: 2), 0.5);
+  }
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+main {
+  padding: 4rem;
+  height: 100%;
+  .icons {
+    margin-top: 1rem;
+    a {
+      padding: 0.4rem;
+      &:hover {
+        color: $secondary-color;
+        @include easeOut();
+      }
+    }
+  }
+  &#home {
+    overflow: hidden;
+    h1 {
+      margin: 20vh 0 0 0;
+    }
+  }
 }
