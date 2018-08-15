@@ -10,7 +10,7 @@
     width: 30px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeOut;
   } //rotate into x 
   &.close {
@@ -97,11 +97,11 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #ffffff;
+    color: set-text-color($primary-color);
     @include easeOut;
-  }
-  &:hover {
-    color: $secondary-color;
+    &:hover {
+      color: $secondary-color;
+    }
   }
 }
 
