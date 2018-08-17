@@ -10,17 +10,18 @@ const Layout = ({ children, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { 
-          name: 'description', 
-          content: 'Rui Huang plays with Gatsby'
+        {
+          name: 'description',
+          content: 'Rui Huang plays with Gatsby',
         },
-        { 
-          name: 'keywords', 
-          content: 'Gatsby, React, JavaScript, Rui Huang' 
+
+        {
+          name: 'keywords',
+          content: 'Gatsby, React, JavaScript, Rui Huang',
         },
       ]}
-    />
-    <Header siteTitle={data.site.siteMetadata.title} />
+    />{' '}
+    <Header siteTitle={data.site.siteMetadata.title} />{' '}
     <div
       style={{
         margin: '0 auto',
@@ -29,8 +30,8 @@ const Layout = ({ children, data }) => (
         paddingTop: 0,
       }}
     >
-      {children()}
-    </div>
+      {children()}{' '}
+    </div>{' '}
   </div>
 )
 
