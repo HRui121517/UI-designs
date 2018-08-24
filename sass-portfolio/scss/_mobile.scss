@@ -1,7 +1,16 @@
 //Widescreens
-@include xlarge {}
+@include xlarge {
+  .projects{
+    grid-template-columns: repeat(4, 1fr);
+    //set grid column to be 4 for xl screen size
+  }
+}
 
-@include large {}
+@include large {
+  .projects{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 @include medium {
   main {
@@ -39,10 +48,16 @@
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr;
   }
+  .projects{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @include small {
   main#home h1 {
     margin-top: 10vh;
+  }
+  .projects{
+    grid-template-columns: 1fr;
   }
 }
