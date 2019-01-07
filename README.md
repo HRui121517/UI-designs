@@ -1,11 +1,18 @@
 **Just front end stuff I play with**
 
-materialize: materialize css page mock up
+_AboutMe_:
+
+A parallex webpage originally developed for LC101
+As a newbie, parallex are a favorite for some reason
 
 ---
 
-AboutMe: A parallex webpage originally developed for LC101
+_materialize_:
 
-----
+materialize css page mock up
 
-sass-portfolio: Trying to learn Sass using node-sass
+---
+
+_sass-portfolio_:
+
+Trying to learn Sass using node-sass
