@@ -1,6 +1,6 @@
 # Just front end stuff I play with
 
-**AboutMe**:
+**aboutMe**:
 
 A parallex webpage originally developed for LC101
 
