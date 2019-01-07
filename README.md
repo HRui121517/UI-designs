@@ -1,18 +1,19 @@
-**Just front end stuff I play with**
+#Just front end stuff I play with#
 
-_AboutMe_:
+**AboutMe**:
 
 A parallex webpage originally developed for LC101
-As a newbie, parallex are a favorite for some reason
+
+parallex effects are a favorite for web dev newbies
 
 ---
 
-_materialize_:
+**materialize**:
 
 materialize css page mock up
 
 ---
 
-_sass-portfolio_:
+**sass-portfolio**:
 
 Trying to learn Sass using node-sass
